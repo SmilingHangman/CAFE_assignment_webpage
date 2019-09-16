@@ -1,0 +1,26 @@
+{
+  "name": "cafe_assignment_webpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmilingHangman/CAFE_assignment_webpage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmilingHangman/CAFE_assignment_webpage/issues"
+  },
+  "homepage": "https://github.com/SmilingHangman/CAFE_assignment_webpage#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}
