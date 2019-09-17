@@ -16,11 +16,15 @@
     "url": "https://github.com/SmilingHangman/CAFE_assignment_webpage/issues"
   },
   "homepage": "https://github.com/SmilingHangman/CAFE_assignment_webpage#readme",
-  "dependencies": {},
+  "dependencies": {
+    "ruby": "^0.6.1"
+  },
   "devDependencies": {
     "grunt": "^1.0.4",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-compass": "^1.1.1",
-    "grunt-contrib-watch": "^1.1.0"
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.1.0",
+    "node-sass": "^4.12.0"
   }
 }
