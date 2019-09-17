@@ -9,9 +9,17 @@
 h1 {    
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 40px;
+    // font-weight: 700;
+    font-weight: 400;
+    font-size: 44px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    color: #242323;
+}
+
+h2 {
+    font-family: 'Crimson Pro', serif;
+    font-style: italic;
+    font-size: 20px;
     color: #242323;
 }
