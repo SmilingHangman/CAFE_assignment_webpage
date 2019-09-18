@@ -22,12 +22,23 @@ nav {
 		line-height: 42px;
 		color: #F5F5F5;
 		font-family: 'Open Sans Condensed', sans-serif;
-		letter-spacing: 0.1em;
+		letter-spacing: 0.05em;
         cursor: pointer;
 		transition: color 0.4s ease 0s;
 	}
 
 	.nav-link:hover {
 		color: #A0A09F;
+	}
+
+	.book-a-room {
+		border: 1px solid white;
+		font-weight: 700;
+		padding: 0 25px;
+		transition: 0.4s;
+	}
+	.book-a-room:hover {
+		background-color: white;
+		color: black;
 	}
 }
