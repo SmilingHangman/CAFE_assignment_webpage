@@ -1,0 +1,55 @@
+form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+fieldset {
+    width: 980px;
+    margin-top: 40px;
+    padding: 12px 10px;
+    display: flex;
+    justify-content: space-between;
+    .form-block {
+        width: 100%;
+        padding: 0 5px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Open Sans Condensed';
+        font-size: 14px;
+    }
+    .form-block:nth-of-type(3),
+    .form-block:nth-of-type(4) {
+        flex-shrink: 2;
+    }
+    input {
+        margin-top: 3px;
+        height: 32px;
+        font-size: 16px;
+        box-sizing: border-box;
+        border: 1px solid $bbgray-light;
+    }
+    input[type=number] {
+        max-width: 96px;
+    }
+    input[type=submit] {
+        margin-left: 5px;
+        width: 70%;
+        height: 32px;
+        background: $bbgray;
+        border: 1px solid $bbgray;
+        align-self: flex-end;
+        font-family: 'Open Sans Condensed';
+        font-size: 14px;
+        color: white;
+    }
+    // input[type=number] { 
+    //     -moz-appearance: textfield;
+    //     appearance: textfield;
+    //     margin: 0; 
+    // }
+    // input[type=number]::-webkit-inner-spin-button, 
+    // input[type=number]::-webkit-outer-spin-button { 
+    //   -webkit-appearance: none; 
+    //   margin: 0; 
+    // }
+}

@@ -23,7 +23,6 @@
             <a class="nav-link" href="#">GALLERY</a>
             <a class="nav-link" href="#">SEE&nbsp;&&nbsp;DO</a>
             <a class="nav-link" href="#">CONTACT</a>
-            <!-- redo the nav-link below into a link, not a NAV -->
             <a class="nav-link book-a-room" href="#">Book&nbsp;A&nbsp;Room</a>
         </div>
     </nav>
@@ -35,9 +34,22 @@
             <h2>Bed&nbsp;&&nbsp;Breakfast</h2>
         </div>
 
-        <div class="home-img">
-        <!-- <img class="home-img" src="assets/bnb_outside.png" alt=""> -->
-        </div>
+        <div class="home-img"></div>
+
+        <form method="get">
+            <fieldset>
+                <div class="form-block">Check In <input type="date" name="checkin"></div>
+                <div class="form-block">Check Out <input type="date" name="checkout"></div>
+                <div class="form-block">Adults <input type="number" min="1" value="1" name="numb_adults"></div>
+                <div class="form-block">Kids <input type="number" min="0" value="0" name="numb_kids"></div>
+                <input type="submit" value="Search">
+            </fieldset>
+        </form>
+
+        <article>
+            <h3>ABOUT</h3>
+            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.​</p>
+        </article>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
