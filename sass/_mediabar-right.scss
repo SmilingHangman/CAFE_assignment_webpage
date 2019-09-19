@@ -1,0 +1,14 @@
+.mediabar-right {
+    width: 87px;
+    height: 222px;
+    background-color: white;
+    position: fixed;
+    overflow: auto;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

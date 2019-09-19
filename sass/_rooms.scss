@@ -1,0 +1,42 @@
+.rooms {
+    background-image: url("../assets/bnb_bedroom.png");
+    min-height: 630px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    // background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 980px;
+    article {
+        margin: 0;
+        padding: 52px;
+        min-width: 260px;
+        max-width: 40%;
+        height: 369px;
+        background-color: white;
+        p {
+            margin-bottom: 39px;
+        }
+        a {
+            text-decoration: none;
+        }
+        .book-a-room {
+            line-height: 42px;
+            border: 1px solid black;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            align-self: center;
+            color: black;
+            padding: 0 25px;
+            transition: 0.4s;
+        }
+        .book-a-room:hover {
+            background-color: black;
+            color: white;
+        }
+    }
+}
