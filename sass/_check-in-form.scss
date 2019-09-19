@@ -7,8 +7,15 @@ fieldset {
     width: 980px;
     margin-top: 40px;
     padding: 12px 10px;
+    // display: flex;
+    // justify-content: space-between;
+    .fieldset-tag-is-buggy-af {
+    // width: 980px;
+    // margin-top: 40px;
+    // padding: 12px 10px;
     display: flex;
     justify-content: space-between;
+    }
     .form-block {
         width: 100%;
         padding: 0 5px;
@@ -52,4 +59,5 @@ fieldset {
     //   -webkit-appearance: none; 
     //   margin: 0; 
     // }
+
 }
