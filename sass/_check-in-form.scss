@@ -7,12 +7,7 @@ fieldset {
     width: 980px;
     margin-top: 40px;
     padding: 12px 10px;
-    // display: flex;
-    // justify-content: space-between;
     .fieldset-tag-is-buggy-af {
-    // width: 980px;
-    // margin-top: 40px;
-    // padding: 12px 10px;
     display: flex;
     justify-content: space-between;
     }
@@ -37,6 +32,8 @@ fieldset {
     }
     input[type=number] {
         max-width: 96px;
+        -moz-appearance: textfield;
+        appearance: textfield;
     }
     input[type=submit] {
         margin-left: 5px;
@@ -49,6 +46,8 @@ fieldset {
         font-size: 14px;
         color: white;
     }
+
+    // (KEEP THIS FOR LATER, when you feel like messing with input[number] spinners)
     // input[type=number] { 
     //     -moz-appearance: textfield;
     //     appearance: textfield;
