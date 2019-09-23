@@ -1,5 +1,5 @@
-.services {
-    margin: 190px 0 150px 0;
+.services, .todo {
+    margin: 190px 0 100px 0;
     max-width: 980px;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
         font-size: 28px;
         margin-bottom: 39px;
     }
-    .type-of-service {
+    .type-of-service, .whatodo {
         padding: 0 50px;
         display: flex;
         flex-direction: column;
