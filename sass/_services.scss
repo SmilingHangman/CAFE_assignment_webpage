@@ -18,23 +18,26 @@
         svg {
             width: 42px;
             height: 42px;
-            fill: $para-gray;
-            // PASIDARYK SUOLIUKA!
-            // svg:nth-of-type(2) {
-            //     width: 67px;
-            //     height: 22px;
-            // }
+            fill: $para-gray;              
+        }
+        .bench {
+            width: 67px;
+            height: 42px;
         }
         h4 {
+            display: flex;
+            align-items: center;
             margin-top: 5px;
             font-family: 'Open Sans Condensed';
             font-size: 16px;
             font-weight: 700;
             letter-spacing: 0.04em;
             line-height: 27px;
+            text-align: center;
+            height: 54px;
         }
         p {
-            margin-top: 27px;
+            margin-top: 5px;
             line-height: 1.5em;
             font-family: 'Open Sans Condensed';
             font-size: 16px;

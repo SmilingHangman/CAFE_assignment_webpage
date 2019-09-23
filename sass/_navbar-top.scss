@@ -8,6 +8,7 @@ nav {
 	position: fixed;
     overflow: auto;
 	top: 0px;
+	z-index: 9;
 	
 	.nav-wrapper {
 		width: 980px;
