@@ -1,0 +1,41 @@
+.contact-us {
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 150px;
+    background-color: rgb(241, 233, 233);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+        font-family: 'Open Sans Condensed';
+        font-size: 28px;
+        margin-bottom: 39px;
+    }
+    .contact-info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 980px;
+        padding: 0 10px;
+        a {
+            text-decoration: none;
+            line-height: 1.5em;
+            font-family: 'Open Sans Condensed';
+            font-size: 16px;
+            color: $para-gray;
+            font-style: italic;
+            letter-spacing: 0.04em;
+        }
+        .contline {
+            width: 35%; 
+            line-height: 1.5em;
+            font-family: 'Open Sans Condensed';
+            font-size: 18px;
+            color: $para-gray;
+            font-style: italic;
+            letter-spacing: 0.04em;
+            text-align: center;
+        }
+        .contline:nth-of-type(2) {flex-shrink: 0;}
+    }
+}
