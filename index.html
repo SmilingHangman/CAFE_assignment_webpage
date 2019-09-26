@@ -36,19 +36,27 @@
                 alt=""></a>
     </div>
 
-    <button class="chat-button" onclick="openChat()"><img src="./assets/chat-bubble.svg" alt=""></button>
-    <div class="chat-popup" id="chatForm">
-        <div class="chatbox">
-            <div class="chat-top">
-                <div class="thin-top">
-                    <p>Let's Chat!</p>
-                    <button type="button" class="close-chat-btn" onclick="closeChat()">
-                    </button>
+    <button class="chat-button" id="chatButton"><img src="./assets/chat-bubble.svg" alt=""></button>
+    <div class="chatbox-wrapper">
+        <div class="chat-popup" id="chatForm">
+            <div class="chatbox">
+                <div class="chat-top" id="chatTop">
+                    <div class="thin-top">
+                        <p id="topP">Let's Chat!</p>
+                        <button type="button" class="close-chat-btn" id="closeChat">
+                        </button>
+                    </div>
+                    <div class="chat-middle" id="chatMid">
+                        <h4 >Let's Chat!</h4>
+                        <p>Ask us any question.</p>
+                    </div>
                 </div>
-                <h4>Let's Chat!</h4>
-                <p>Ask us any question.</p>
+                <div class="chat-screen-bottom">
+                    <img src="./assets/happyface.svg" alt="">
+                    <textarea name="chat-line" placeholder="Type your message..."></textarea>
+                    <img src="./assets/paperclip.svg" alt="">
+                </div>
             </div>
-            <div class="chat-screen"></div>
         </div>
     </div>
 

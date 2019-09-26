@@ -7,21 +7,34 @@
     background-color: $bbgray;
     border: none;
     border-radius: 50%;
-    z-index: 9;
+    z-index: 98;
     outline: none;
 }
 
-.chat-popup {
-    display: none;
+.chatbox-wrapper {
     position: fixed;
     bottom: 0;
     left: 20px;
-    z-index: 10;
+    height: 540px;
+    width: 336px;
+    overflow: hidden;
+    z-index: 97;
+}
+
+.chat-popup {
+    position: absolute;
+    bottom: -540px;
+    transition-duration: 0.3s;
     .chatbox {
         height: 540px;
         width: 336px;
         background-color: rgb(241, 233, 233);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
         .chat-top {
+            width: 100%;
             background-color: $bbgray;
             color: #ffffff;
             height: 50%;
@@ -33,11 +46,19 @@
             font-family: 'Open Sans Condensed';
             font-size: 16px;
             text-align: center;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+            &:hover {
+                cursor: pointer;
+            }
             .thin-top {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 width: 100%;
+                p {
+                    visibility: hidden;
+                }
                 .close-chat-btn {
                     height: 30px;
                     width: 30px;
@@ -47,17 +68,52 @@
                     background-position: center;
                     border: none;
                     border-radius: 50%;
+                    transition-duration: 0.1s;
                     &:hover {
                         background-color: $bbgray-light;
                     }
                 }
             }
+            .chat-middle {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 210px;
+                transition-duration: 0.1s;
+            }
             h4 {
-                margin-top: 20%;
+                margin-top: 65px;
                 margin-bottom: 15px;
                 font-size: 22px;
             }
             
+        }
+        .chat-screen-bottom {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            width: 100%;
+            padding: 18px;
+            background-color: #ffffff;
+            img {
+                height: 20px;
+                width: 20px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            textarea {
+                margin: 0 20px;
+                width: 100%;
+                height: 20px;
+                font-family: 'Open Sans Condensed';
+                font-size: 16px;
+                letter-spacing: 0.04em;
+                padding: 0;
+                border: none;
+                resize: none;
+                color: $para-gray;
+            }
         }
     }
 }
