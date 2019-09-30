@@ -21,6 +21,7 @@ document.getElementById("chatButton").addEventListener("click", function () {
     document.getElementById("topP").style.visibility = "hidden";
     document.getElementById("chatMid").style.display = "block";
     document.getElementById("chatTop").style.height = "270px";
+    document.getElementById("chatWrap").style.overflow = "visible";
     timesClicked = 0;
 }
 );
@@ -33,7 +34,6 @@ document.getElementById("closeChat").addEventListener("click", function () {
 );
 
 // Chat window resizing code below
-
 document.getElementById("chatTop").addEventListener("click", function () {
     timesClicked++;
 
@@ -46,5 +46,4 @@ document.getElementById("chatTop").addEventListener("click", function () {
         document.getElementById("chatMid").style.display = "none";
         document.getElementById("chatTop").style.height = "60px";
     }
-
 });
