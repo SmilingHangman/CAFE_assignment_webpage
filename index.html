@@ -11,18 +11,19 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/app.css">
     <title>B&B Website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
     <nav class="nav">
         <div class="nav-wrapper">
-            <a class="nav-link active" href="#">HOME</a>
-            <a class="nav-link" href="#">ABOUT</a>
-            <a class="nav-link" href="#">ROOMS</a>
-            <a class="nav-link" href="#">SERVICES</a>
-            <a class="nav-link" href="#">GALLERY</a>
-            <a class="nav-link" href="#">SEE&nbsp;&&nbsp;DO</a>
-            <a class="nav-link" href="#">CONTACT</a>
+            <a class="nav-link active" href="#home">HOME</a>
+            <a class="nav-link" href="#about">ABOUT</a>
+            <a class="nav-link" href="#rooms">ROOMS</a>
+            <a class="nav-link" href="#services">SERVICES</a>
+            <a class="nav-link" href="#gallery">GALLERY</a>
+            <a class="nav-link" href="#see_and_do">SEE&nbsp;&&nbsp;DO</a>
+            <a class="nav-link" href="#contact">CONTACT</a>
             <a class="nav-link book-a-room" href="#">Book&nbsp;A&nbsp;Room</a>
         </div>
     </nav>
@@ -60,7 +61,7 @@
         </div>
     </div>
 
-    <div class="master-wrapper">
+    <div class="master-wrapper" id="home">
         <div class="main-title">
             <h1>anton&nbsp;&&nbsp;lily</h1>
             <h2>Bed&nbsp;&&nbsp;Breakfast</h2>
@@ -68,7 +69,7 @@
 
         <div class="home-img"></div>
 
-        <form method="get" target="_blank">
+        <form method="get" target="_blank" id="about">
             <fieldset>
                 <div class="fieldset-tag-is-buggy-af">
                     <div class="form-block">Check In <input type="date" name="checkin"></div>
@@ -88,7 +89,7 @@
                 about you.​</p>
         </article>
 
-        <div class="rooms">
+        <div class="rooms" id="rooms">
             <article>
                 <h3>OUR ROOMS</h3>
                 <p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
@@ -96,7 +97,7 @@
             </article>
         </div>
 
-        <div class="services">
+        <div class="services" id="services">
             <h3>OUR SERVICES</h3>
             <div class="container">
                 <div class="row">
@@ -244,7 +245,7 @@
             </div>
         </div>
 
-        <div class="gallery">
+        <div class="gallery" id="gallery">
             <h3>GALLERY</h3>
             <div class="pic-wrapper">
                 <div class="gal-left">
@@ -259,7 +260,7 @@
             </div>
         </div>
 
-        <div class="todo">
+        <div class="todo" id="see_and_do">
             <h3>THINGS TO DO</h3>
             <div class="container">
                 <div class="row">
@@ -319,7 +320,7 @@
         </div>
     </div>
 
-    <div class="contact-us">
+    <div class="contact-us" id="contact">
         <h3>CONTACT US</h3>
         <div class="contact-info">
             <a class="contline" href="mailto:thismail@nonexistent.com">info@mysite.com</a>
@@ -351,9 +352,13 @@
         <div class="credits">&copy; 2023 by Anton & Lily. Cobbled together by  <a href="https://github.com/SmilingHangman" target="_blank">SmilingHangman</a>. Original design by <a href="https://www.wix.com/" target="_blank">Wix.com</a></div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
