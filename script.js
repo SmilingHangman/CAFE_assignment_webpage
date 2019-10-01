@@ -9,7 +9,52 @@ $('a[href*="#"]').on('click', function (e) {
         700,
         'linear'
     )
-})
+});
+
+//navigation active color
+var selector = '.nav .nav-wrapper .nav-link';
+
+$(selector).on('click', function(){
+    $(selector).removeClass('active');
+    $(this).addClass('active');
+});
+
+//navigation link color change on scroll
+// remember this for later to put in console:
+// window.addEventListener('scroll', function(){console.log(window.pageYOffset)})
+// $(document).ready(function(){
+//     $(window).scroll(function (event) {
+//         var scroll = $(window).scrollTop();
+//         if(scroll < 803){
+//          $(".nav .nav-wrapper .nav-link").removeClass('active');
+//          $("#navLink01").addClass('active');
+//     }
+//         else if(scroll > 802 && scroll < 1349){
+//          $(".nav .nav-wrapper .nav-link").removeClass('active');
+//          $("#navLink02").addClass('active');
+//     }
+//         else if(scroll > 1348 && scroll < 2169){
+//          $(".nav .nav-wrapper .nav-link").removeClass('active');
+//          $("#navLink03").addClass('active');
+//     }
+//         else if(scroll > 2168 && scroll < 3128){
+//         $(".nav .nav-wrapper .nav-link").removeClass('active');
+//         $("#navLink04").addClass('active');
+//     }
+//         else if(scroll > 3127 && scroll < 4026){
+//         $(".nav .nav-wrapper .nav-link").removeClass('active');
+//         $("#navLink05").addClass('active');
+//     }
+//         else if(scroll > 4025 && scroll < 5739){
+//         $(".nav .nav-wrapper .nav-link").removeClass('active');
+//         $("#navLink06").addClass('active');
+//     }
+//         else if(scroll >= 5739){
+//          $(".nav .nav-wrapper .nav-link").removeClass('active');
+//          $("#navLink07").addClass('active');
+//     }
+//         });
+//   });
 
 // this declaration is needed for chat window resizing later below
 var timesClicked = 0;
