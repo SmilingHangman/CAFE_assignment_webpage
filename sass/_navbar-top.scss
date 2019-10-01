@@ -16,8 +16,12 @@ nav {
 		justify-content: space-around;
 		align-content: center;
 	}
+
+	.nav-link-alt {
+		text-decoration: none;
+	}
 	
-	.nav-link {
+	.nav-link, .nav-link-alt {
 		display: block;
 		padding: 0 10px;
 		line-height: 42px;
