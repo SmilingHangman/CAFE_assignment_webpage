@@ -1,4 +1,11 @@
-// navigation scroll below
+// // navigation scroll below
+
+// direct browser to top right away
+if (window.location.hash)
+    scroll(0,0);
+// takes care of some browsers issue
+setTimeout(function(){scroll(0,0);},1);
+
 $('a[href*="#"]').on('click', function (e) {
     e.preventDefault()
 
@@ -10,6 +17,18 @@ $('a[href*="#"]').on('click', function (e) {
         'linear'
     )
 });
+
+// if we have anchor on the url (calling from other page)
+if(window.location.hash){
+    // smooth scroll to the anchor id
+    $('html, body').animate(
+        {
+            scrollTop: $(window.location.hash).offset().top-120,
+        },
+        700,
+        'linear'
+    )
+};
 
 //navigation active color
 var selector = '.nav .nav-wrapper .nav-link';
