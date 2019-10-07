@@ -6,17 +6,17 @@ if (window.location.hash)
 // takes care of some browsers issue
 setTimeout(function(){scroll(0,0);},1);
 
-$('a[href*="#"]').on('click', function (e) {
-    e.preventDefault()
+// $('a[href*="#"]').on('click', function (e) {
+//     e.preventDefault()
 
-    $('html, body').animate(
-        {
-            scrollTop: $($(this).attr('href')).offset().top-120,
-        },
-        700,
-        'linear'
-    )
-});
+//     $('html, body').animate(
+//         {
+//             scrollTop: $($(this).attr('href')).offset().top-120,
+//         },
+//         700,
+//         'linear'
+//     )
+// });
 
 // if we have anchor on the url (calling from other page)
 if(window.location.hash){

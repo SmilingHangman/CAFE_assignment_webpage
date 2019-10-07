@@ -1,0 +1,114 @@
+.room-info-top {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 980px;
+    padding-bottom: 25px;
+    a {
+        // width: fit-content;
+        // display: inline-block;
+        height: 20px;
+        width: 20px;
+        margin-right: 24px;
+        img {
+            height: 20px;
+            width: 20px;
+        }
+    }
+    h3 {
+        font-family: 'Open Sans Condensed';
+        font-size: 28px;
+        width: 100%;
+        padding-left: 24px;
+        border-left: solid 1px $bbgray-light;
+    }
+}
+
+.room-info-main {
+    display: flex;
+    height: 1500px;
+    .room-info-left {
+        width: 100%;
+        margin-right: 20px;
+        // width: 500px;
+        // height: 300px;
+        // background-color: aquamarine;
+    }
+    form {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 85px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 260px;
+        height: 421px;
+        border: 1px solid $bbgray-light;
+        padding: 19px;
+        .price-per-night {
+            border-left: 1px solid $bbgray-light;
+            font-family: 'Open Sans Condensed';
+            padding-left: 13px;
+            margin-bottom: 22px;
+            p {
+                font-size: 14px;
+            }
+            h6 {
+                font-size: 40px;
+                margin: 10px 0 10px 0;
+            }
+        }
+    }
+    fieldset {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        .because-fieldset-tag-is-buggy-af {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+            .form-block {
+                width: 100%;
+                max-width: 100%;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                font-family: 'Open Sans Condensed';
+                font-size: 14px;
+                margin-top: 5px;
+            }
+            .form-block:nth-of-type(3),
+            .form-block:nth-of-type(4) {
+                flex-shrink: unset;
+            }
+            input {
+                margin-top: 3px;
+                height: 32px;
+                font-size: 14px;
+                box-sizing: border-box;
+                border: 1px solid $bbgray-light;
+                padding-left: 4px;
+            }
+            input[type=number] {
+                width: 100%;
+                max-width: 100%;
+                padding-left: 6px;
+                -moz-appearance: textfield;
+                appearance: textfield;
+            }
+            input[type=submit] {
+                margin: 23px 0 0 0;
+                width: 100%;
+                height: 32px;
+                background: $bbgray;
+                border: 1px solid $bbgray;
+                align-self: unset;
+                font-family: 'Open Sans Condensed';
+                font-size: 14px;
+                color: white;
+            }
+        }
+    }
+}
