@@ -24,7 +24,7 @@
             <a class="nav-link" id="navLink05" href="index.html#gallery">GALLERY</a>
             <a class="nav-link" id="navLink06" href="index.html#see_and_do">SEE&nbsp;&&nbsp;DO</a>
             <a class="nav-link" id="navLink07" href="index.html#contact">CONTACT</a>
-            <a class="nav-link-alt book-a-room" href="#home">Book&nbsp;A&nbsp;Room</a>
+            <a class="nav-link-alt book-a-room" href="book_a_room.html">Book&nbsp;A&nbsp;Room</a>
         </div>
     </nav>
 
@@ -70,11 +70,11 @@
             <div class="room-info-left">
                 <div id="roomGallery" class="carousel slide carousel-fade">
                     <ol class="carousel-indicators">
-                        <li data-target="#indicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#indicators" data-slide-to="1"></li>
-                        <li data-target="#indicators" data-slide-to="2"></li>
-                        <li data-target="#indicators" data-slide-to="3"></li>
-                        <li data-target="#indicators" data-slide-to="4"></li>
+                        <li data-target="#roomGallery" data-slide-to="0" class="active gallery-indicator-01"></li>
+                        <li data-target="#roomGallery" data-slide-to="1" class="gallery-indicator-02"></li>
+                        <li data-target="#roomGallery" data-slide-to="2" class="gallery-indicator-03"></li>
+                        <li data-target="#roomGallery" data-slide-to="3" class="gallery-indicator-04"></li>
+                        <li data-target="#roomGallery" data-slide-to="4" class="gallery-indicator-05"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -93,14 +93,70 @@
                         <img src="./assets/rooms_gallery_05.jpg" class="d-block w-100" alt="">
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#indicators" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#roomGallery" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#indicators" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#roomGallery" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
+                </div>
+
+                <div class="room-description-full">
+                    <div class="room-properties">
+                        <div class="room-description-left"><h6>Properties:</h6></div>
+                        <ul class="room-properties-listed">
+                            <li>Accommodates:&nbsp;2</li>
+                            <li>Size: 260 sq ft</li>
+                            <li>Beds: 2 Double(s)</li>
+                        </ul>
+                    </div>
+                    <div class="room-more-info">
+                        <div class="room-description-left"><h6>More Info:</h6></div>
+                        <p>Affordable luxury. Our Junior Suites are the perfect option if you’re looking for a little extra luxury. With an open 400 square foot floor plan, the Junior Suites offer the extra space you need to spread out and enjoy the breathtaking views of the city skyline.</p>
+                    </div>
+                    <div class="amenities">
+                        <div class="room-description-left"><h6>Amenities:</h6></div>
+                        <div class="amenities-listed">
+                            <div class="amenity-span">
+                                <img src="./assets/air-conditioning.svg" alt="">
+                                <span>A/C</span>
+                            </div>
+                            <div class="amenity-span">
+                                <img src="./assets/wifi.svg" alt="">
+                                <span>WiFi</span>
+                            </div>
+                            <div class="amenity-span">
+                                <img src="./assets/television.svg" alt="">
+                                <span>TV</span>
+                            </div>
+                            <div class="amenity-span">
+                                <img src="./assets/safe-box.svg" alt="">
+                                <span>Safe</span>
+                            </div>
+                            <div class="amenity-span">
+                                <img src="./assets/minibar.svg" alt="">
+                                <span>Minibar</span>
+                            </div>
+                            <div class="amenity-span">
+                                <img src="./assets/telephone.svg" alt="">
+                                <span>Telephone</span>
+                            </div>
+                            <div class="amenity-span">
+                                <img src="./assets/kitchen.svg" alt="">
+                                <span>Kitchen</span>
+                            </div>
+                            <div class="amenity-span">
+                                <img src="./assets/towel.svg" alt="">
+                                <span>Towels</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-terms">
+                        <div class="room-description-left"><h6>Terms:</h6></div>
+                        <a href="#">Read Our Policies</a>
+                    </div>
                 </div>
             </div>
             <form method="get" target="_blank" id="about">
@@ -158,14 +214,12 @@
                 href="https://www.wix.com/" target="_blank">Wix.com</a></div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 

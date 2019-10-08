@@ -1,23 +1,9 @@
-// // navigation scroll below
-
+// Smooth scroll for navbar from other (not home) pages
 // direct browser to top right away
 if (window.location.hash)
     scroll(0,0);
 // takes care of some browsers issue
 setTimeout(function(){scroll(0,0);},1);
-
-// $('a[href*="#"]').on('click', function (e) {
-//     e.preventDefault()
-
-//     $('html, body').animate(
-//         {
-//             scrollTop: $($(this).attr('href')).offset().top-120,
-//         },
-//         700,
-//         'linear'
-//     )
-// });
-
 // if we have anchor on the url (calling from other page)
 if(window.location.hash){
     // smooth scroll to the anchor id
