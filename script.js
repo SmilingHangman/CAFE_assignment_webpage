@@ -97,3 +97,8 @@ document.getElementById("chatTop").addEventListener("click", function () {
         document.getElementById("chatTop").style.height = "60px";
     }
 });
+
+//Back button
+document.getElementById("goBack").addEventListener("click", function () {
+    window.history.back()
+});
