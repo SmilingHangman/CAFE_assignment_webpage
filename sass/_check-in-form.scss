@@ -29,9 +29,11 @@ fieldset {
         font-size: 16px;
         box-sizing: border-box;
         border: 1px solid $bbgray-light;
+        padding-left: 4px;
     }
     input[type=number] {
         max-width: 96px;
+        padding-left: 6px;
         -moz-appearance: textfield;
         appearance: textfield;
     }

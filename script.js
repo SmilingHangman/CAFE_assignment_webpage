@@ -1,28 +1,50 @@
 // Smooth scroll for navbar from other (not home) pages
 // direct browser to top right away
+// if (window.location.hash)
+//     scroll(0,0);
+// // takes care of some browsers issue
+// setTimeout(function(){scroll(0,0);},1);
+// // if we have anchor on the url (calling from other page)
+// if(window.location.hash){
+//     // smooth scroll to the anchor id
+//     $('html, body').animate(
+//         {
+//             scrollTop: $(window.location.hash).offset().top-120,
+//         },
+//         700,
+//         'linear'
+//     )
+// };
+
+// direct browser to top right away
 if (window.location.hash)
     scroll(0,0);
-// takes care of some browsers issue
 setTimeout(function(){scroll(0,0);},1);
+
+$(function(){
+$('.scroll').on('click', function(e){
+    e.preventDefault();
+    $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top-120,
+        },700,'swing');
+});
+
 // if we have anchor on the url (calling from other page)
 if(window.location.hash){
     // smooth scroll to the anchor id
-    $('html, body').animate(
-        {
-            scrollTop: $(window.location.hash).offset().top-120,
-        },
-        700,
-        'linear'
-    )
-};
+    $('html, body').animate({
+            scrollTop:$(window.location.hash).offset().top-120,
+        },700,'swing');
+    }
+});
 
 //navigation active color
-var selector = '.nav .nav-wrapper .nav-link';
+// var selector = '.nav .nav-wrapper .nav-link';
 
-$(selector).on('click', function(){
-    $(selector).removeClass('active');
-    $(this).addClass('active');
-});
+// $(selector).on('click', function(){
+//     $(selector).removeClass('active');
+//     $(this).addClass('active');
+// });
 
 //navigation link color change on scroll
 // remember this for later to put in console:
@@ -96,9 +118,4 @@ document.getElementById("chatTop").addEventListener("click", function () {
         document.getElementById("chatMid").style.display = "none";
         document.getElementById("chatTop").style.height = "60px";
     }
-});
-
-//Back button
-document.getElementById("goBack").addEventListener("click", function () {
-    window.history.back()
 });
