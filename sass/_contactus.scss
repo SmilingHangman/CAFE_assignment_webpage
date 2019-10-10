@@ -95,6 +95,7 @@
 @media only screen and (max-width: 699px) {
     .contact-us {
         padding-top: 50px;
+        padding-bottom: 40px;
     }
     .contact-us h3 {
         margin-bottom: 20px;
@@ -118,5 +119,22 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+    .contact-us .leave-a-msg {
+        width: 100%;
+        max-width: 500px;
+        padding: 0 20px;
+    }
+    .contact-us .leave-a-msg .name-n-mail {
+        flex-direction: column;
+    }
+    .contact-us .leave-a-msg input[type=email] {
+        margin-left: 0;
+    }
+    .contact-us .leave-a-msg input[type=text] {
+        margin-bottom: 8px;
+    }
+    .contact-us .leave-a-msg textarea {
+        margin-top: -5px;
     }
 }
