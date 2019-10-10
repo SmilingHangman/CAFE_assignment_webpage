@@ -1,5 +1,5 @@
 // navigation scroll below
-$('a[href*="#homeHere"]').on('click', function (e) {
+$('a[href*="#top"]').on('click', function (e) {
     e.preventDefault()
 
     $('html, body').animate(
