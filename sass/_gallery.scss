@@ -40,4 +40,31 @@
             background-image: url("../assets/gal_soap.png");
         }
     }
+    .mobile-gallery-wrapper {
+        display: none;
+        .mobile-gallery {
+            margin: 0 5px 10px 5px;
+            max-width: 31%;
+        }
+    }
+}
+
+@media only screen and (max-width: 999px) {
+    .gallery .pic-wrapper {
+        display: none;
+    }
+    .gallery .mobile-gallery-wrapper {
+        padding: 0 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        max-width: 980px;
+    }
+}
+
+@media only screen and (max-width: 699px) {
+    .gallery .mobile-gallery-wrapper .mobile-gallery {
+        max-width: 45%;
+    }
 }
