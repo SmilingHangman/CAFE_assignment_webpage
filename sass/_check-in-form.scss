@@ -62,3 +62,35 @@ fieldset {
     // }
 
 }
+
+@media only screen and (max-width: 699px) {
+    .fieldset-tag-is-buggy-af {
+        flex-wrap: wrap;
+        .form-block {
+            width: 100%;
+        }
+        input[type=number] {
+            max-width: 100%;
+            width: 100%;
+            padding-left: 6px;
+        }
+        .form-block:nth-of-type(3),
+        .form-block:nth-of-type(4) {
+            flex-shrink: 0;
+        }
+        .form-block:nth-of-type(1),
+        .form-block:nth-of-type(2) {
+            width: 50%;
+        }
+        .block-adults {
+            margin-top: 15px;
+        }
+        input[type=submit] {
+            width: 100%;
+            margin-right: 5px;
+            height: 42px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+    }   
+}
