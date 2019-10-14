@@ -23,5 +23,8 @@ article {
 @media only screen and (max-width: 699px) {
     article {
         margin: 0 0 40px 0;
+        p {
+            padding: 0 7px;
+        }
     }
 }

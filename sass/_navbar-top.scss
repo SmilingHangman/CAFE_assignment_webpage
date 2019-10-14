@@ -6,7 +6,7 @@ nav {
 	justify-content: center;
 	align-content: center;
 	position: fixed;
-    overflow: auto;
+    // overflow: auto;
 	top: 0px;
 	z-index: 99;
 	
@@ -41,9 +41,132 @@ nav {
 		font-weight: 700;
 		padding: 0 25px;
 		transition: 0.4s;
+		text-align: center;
 	}
 	.book-a-room:hover {
 		background-color: white;
 		color: black;
+	}
+	.burger-border {
+		display: none;
+		.mobile-burger {
+			display: none;
+		}
+	}
+}
+
+.mobile-navigation {
+	display: none;
+}
+
+@media only screen and (max-width: 699px) {
+	nav {
+		.nav-wrapper {
+			justify-content: space-between;
+			padding: 0 18px;
+			.nav-mobile-hidden {
+				display: none;
+			}
+			.book-a-room {
+				width: 100%;
+			}
+			.burger-border {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 44px;
+				width: 44px;
+				border: 1px solid white;
+				margin-left: 18px;
+				flex-shrink: 0;
+				&:hover {
+					cursor: pointer;
+				}
+				.mobile-burger {
+					display: block;
+					position: relative;
+					border: 1px solid white;
+					width: 22px;
+					&::before {
+						content: "";
+						border: 1px solid white;
+						width: 22px;
+						position: absolute;
+						top: 6px;
+						left: -1px;
+					}
+					&::after {
+						content: "";
+						border: 1px solid white;
+						width: 22px;
+						position: absolute;
+						top: -8px;
+						left: -1px;
+					}
+				}
+			}		
+		}
+	}
+	.mobile-navigation {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		position: fixed;
+		width: 100vw;
+		height: 100%;
+		z-index: 100;
+		background-color: $bbgray;
+		.nav-link {
+			// display: block;
+			padding: 0 10px;
+			line-height: 42px;
+			color: #F5F5F5;
+			font-family: 'Open Sans Condensed', sans-serif;
+			letter-spacing: 0.05em;
+			cursor: pointer;
+			transition: color 0.4s ease 0s;
+		}
+	
+		.nav-link:hover {
+			color: $bbgray-light;
+		}
+		.burger-border {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 44px;
+			width: 44px;
+			border: 1px solid white;
+			flex-shrink: 0;
+			position: absolute;
+			top: 18px;
+			right: 18px;
+			&:hover {
+				cursor: pointer;
+			}
+			.mobile-burger {
+				display: block;
+				position: relative;
+				border: 1px solid white;
+				width: 22px;
+				&::before {
+					content: "";
+					border: 1px solid white;
+					width: 22px;
+					position: absolute;
+					top: 6px;
+					left: -1px;
+				}
+				&::after {
+					content: "";
+					border: 1px solid white;
+					width: 22px;
+					position: absolute;
+					top: -8px;
+					left: -1px;
+				}
+			}
+		}
 	}
 }
