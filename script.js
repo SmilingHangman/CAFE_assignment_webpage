@@ -108,54 +108,63 @@ document.getElementById("chatTop").addEventListener("click", function () {
 document.getElementById("menuToggleOn").addEventListener("click", function () {
     document.getElementById("mobileNavigationMenu").style.display = "flex";
     document.getElementById("mobileNavigationMenu").style.opacity = "0";
+    document.getElementsByTagName("BODY")[0].style.overflow = "hidden"; 
     setTimeout(function () { document.getElementById("mobileNavigationMenu").style.opacity = "1" }, 100);
 }
 );
 
 document.getElementById("menuToggleOff").addEventListener("click", function () {
     document.getElementById("mobileNavigationMenu").style.opacity = "0";
+    document.getElementsByTagName("BODY")[0].style.overflow = "visible";
     setTimeout(function () { document.getElementById("mobileNavigationMenu").style.display = "none" }, 499);
 }
 );
 
 document.getElementById("navMobLink01").addEventListener("click", function () {
     document.getElementById("mobileNavigationMenu").style.opacity = "0";
+    document.getElementsByTagName("BODY")[0].style.overflow = "visible";
     setTimeout(function () { document.getElementById("mobileNavigationMenu").style.display = "none" }, 499);
 }
 );
 
 document.getElementById("navMobLink02").addEventListener("click", function () {
     document.getElementById("mobileNavigationMenu").style.opacity = "0";
+    document.getElementsByTagName("BODY")[0].style.overflow = "visible";
     setTimeout(function () { document.getElementById("mobileNavigationMenu").style.display = "none" }, 499);
 }
 );
 
 document.getElementById("navMobLink03").addEventListener("click", function () {
     document.getElementById("mobileNavigationMenu").style.opacity = "0";
+    document.getElementsByTagName("BODY")[0].style.overflow = "visible";
     setTimeout(function () { document.getElementById("mobileNavigationMenu").style.display = "none" }, 499);
 }
 );
 
 document.getElementById("navMobLink04").addEventListener("click", function () {
     document.getElementById("mobileNavigationMenu").style.opacity = "0";
+    document.getElementsByTagName("BODY")[0].style.overflow = "visible";
     setTimeout(function () { document.getElementById("mobileNavigationMenu").style.display = "none" }, 499);
 }
 );
 
 document.getElementById("navMobLink05").addEventListener("click", function () {
     document.getElementById("mobileNavigationMenu").style.opacity = "0";
+    document.getElementsByTagName("BODY")[0].style.overflow = "visible";
     setTimeout(function () { document.getElementById("mobileNavigationMenu").style.display = "none" }, 499);
 }
 );
 
 document.getElementById("navMobLink06").addEventListener("click", function () {
     document.getElementById("mobileNavigationMenu").style.opacity = "0";
+    document.getElementsByTagName("BODY")[0].style.overflow = "visible";
     setTimeout(function () { document.getElementById("mobileNavigationMenu").style.display = "none" }, 499);
 }
 );
 
 document.getElementById("navMobLink07").addEventListener("click", function () {
     document.getElementById("mobileNavigationMenu").style.opacity = "0";
+    document.getElementsByTagName("BODY")[0].style.overflow = "visible";
     setTimeout(function () { document.getElementById("mobileNavigationMenu").style.display = "none" }, 499);
 }
 );
