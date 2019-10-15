@@ -80,12 +80,22 @@
 				flex-shrink: 0;
 				&:hover {
 					cursor: pointer;
+					.mobile-burger {
+						border: none;
+						&::before {
+							transform: translateY(-7px) rotate(-45deg);
+						}
+						&::after {
+							transform: translateY(7px) rotate(45deg);
+						}
+					}
 				}
 				.mobile-burger {
 					display: block;
 					position: relative;
 					border: 1px solid white;
 					width: 22px;
+					transition-duration: 2s;
 					&::before {
 						content: "";
 						border: 1px solid white;
@@ -93,6 +103,7 @@
 						position: absolute;
 						top: 6px;
 						left: -1px;
+						transition-duration: 2s;
 					}
 					&::after {
 						content: "";
@@ -101,6 +112,7 @@
 						position: absolute;
 						top: -8px;
 						left: -1px;
+						transition-duration: 2s;
 					}
 				}
 			}		
@@ -159,6 +171,9 @@
 					position: absolute;
 					top: 6px;
 					left: -1px;
+					&:hover {
+						transform: rotate(45deg);
+					}
 				}
 				&::after {
 					content: "";
@@ -168,6 +183,9 @@
 					top: -8px;
 					left: -1px;
 				}
+				// &:hover {
+				// 	transform: rotate(45deg);
+				// }
 			}
 		}
 	}
