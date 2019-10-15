@@ -108,7 +108,8 @@
 		}
 	}
 	.mobile-navigation {
-		display: flex;
+		// display: flex;
+		display: none;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
@@ -117,6 +118,9 @@
 		height: 100%;
 		z-index: 100;
 		background-color: $bbgray;
+		opacity: 0;
+		transition: 0.5s;
+		overflow-y: hidden;
 		.nav-link {
 			// display: block;
 			padding: 0 10px;
